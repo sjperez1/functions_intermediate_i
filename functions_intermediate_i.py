@@ -10,7 +10,6 @@ sports_directory = {
 }
 z = [ {'x': 10, 'y': 20} ]
 
-# function and then call before print
 def change_x():
     x[1][0] = 15
 change_x()
