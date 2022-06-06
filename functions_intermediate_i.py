@@ -10,13 +10,25 @@ sports_directory = {
 }
 z = [ {'x': 10, 'y': 20} ]
 
-x[1][0] = 15
+# function and then call before print
+def change_x():
+    x[1][0] = 15
+change_x()
 print(x)
-students[0]['last_name'] = 'Bryant'
+
+def change_last_name():
+    students[0]['last_name'] = 'Bryant'
+change_last_name()
 print(students)
-sports_directory['soccer'][0] = 'Andres'
+
+def change_sports_directory():
+    sports_directory['soccer'][0] = 'Andres'
+change_sports_directory()
 print(sports_directory)
-z[0]['y'] = 30
+
+def change_z():
+    z[0]['y'] = 30
+change_z()
 print(z)
 
 # 2. Iterate Through a List of Dictionaries
@@ -41,7 +53,7 @@ students = [
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 def iterate_dictionary2(key_name, some_list):
-    # We do not have to specify each list, then get the value from each list, so 2 for loops are not needed like in the previous one. student2[key_name] is targeting each dictionary's value corresponding to the key in the brackets. This makes sense because the notation to access values is dictionary_name["key_name"].
+    # We have more information in this problem, like what the key name is, so 2 for loops are not needed like in the previous one. student2[key_name] is targeting each dictionary's value corresponding to the key in the brackets. This makes sense because the notation to access values is dictionary_name["key_name"].
     for student2 in some_list:
         print(student2[key_name])
 iterate_dictionary2('first_name', students)
