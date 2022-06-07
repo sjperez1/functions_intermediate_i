@@ -65,11 +65,11 @@ dojo = {
 }
 def print_info(some_dict):
     # for something in this dictionary (each something will be a key-value pair), print the length of value (which is a list here) corresponding with a key and the name of the key.
-    for lists in some_dict:
-        # print(some_dict[lists])
-        # print(lists)
-        print(len(some_dict[lists]), lists.upper())
+    for keys in some_dict:
+        # print(some_dict[keys])
+        # print(keys)
+        print(len(some_dict[keys]), keys.upper())
         # for something in the value of a key, print all of the things within that value and corresponding key.
-        for cities_people in some_dict[lists]:
-            print(cities_people)
+        for values in some_dict[keys]:
+            print(values)
 print_info(dojo)
